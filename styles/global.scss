@@ -1,0 +1,30 @@
+@import './import.scss';
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  width: 100%;
+  height: 100vh;
+
+  @extend %fontOutfit;
+  font-size: 1rem;
+
+  background: $darkBlueMainBg;
+  color: $white;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: 0;
+  background: transparent;
+}

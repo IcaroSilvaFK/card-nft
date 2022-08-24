@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+$softBluePrimary: hsl(215, 51%, 70%);
+$cyanPrimary: hsl(178, 100%, 50%);
+$darkBlueMainBg: hsl(217, 54%, 11%);
+$darkBlueCardBg: hsl(216, 50%, 16%);
+$darkBlueLine: hsl(215, 32%, 27%);
+$white: hsl(0, 0%, 100%);
+
+// size
+$paragraph: 1.125rem;
+%fontOutfit {
+  font-family: 'Outfit', sans-serif;
+}

@@ -1,0 +1,143 @@
+@import './import.scss';
+
+.container {
+  width: 100%;
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container__card {
+  background: $darkBlueCardBg;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 22px;
+  padding-bottom: 28px;
+
+  border-radius: 10px;
+
+  box-shadow: 0 0 10px $darkBlueMainBg;
+}
+
+.card__equilibrium {
+  position: relative;
+  max-width: 280px;
+  max-height: 280px;
+
+  img {
+    width: 100%;
+    object-fit: cover;
+
+    border-radius: 10px;
+  }
+
+  &:hover {
+    overflow: hidden;
+
+    button {
+      position: absolute;
+
+      bottom: 0;
+      top: 0;
+      left: 0;
+      right: 0;
+      border-radius: 10px;
+
+      background-image: url('/assets/icon-view.svg');
+
+      background-position: center;
+      background-repeat: no-repeat;
+      background-color: transparentize($cyanPrimary, 0.5);
+
+      z-index: 1;
+    }
+  }
+}
+
+.card__content {
+  margin-top: 12px;
+
+  max-width: 280px;
+
+  a {
+    font-size: $paragraph;
+
+    &:hover {
+      color: $cyanPrimary;
+    }
+  }
+}
+
+.content__paragraphy {
+  max-width: 300px;
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: center;
+
+  padding: 12px 0;
+
+  p {
+    color: $softBluePrimary;
+  }
+}
+
+.card__time {
+  display: flex;
+  justify-content: space-between;
+
+  margin-top: 12px;
+
+  span {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  span:first-child {
+    color: $cyanPrimary;
+  }
+  span:last-child {
+    font-size: 0.875rem;
+    color: $softBluePrimary;
+  }
+}
+
+.card__profile {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  color: $softBluePrimary;
+
+  span {
+    a {
+      color: $white;
+
+      &:hover {
+        color: $cyanPrimary;
+      }
+    }
+  }
+
+  img {
+    width: 35px;
+
+    border: 1px solid $white;
+    border-radius: 50%;
+  }
+}
+
+.divider {
+  width: 100%;
+  height: 1px;
+
+  margin: 18px auto;
+
+  background: $darkBlueLine;
+}
